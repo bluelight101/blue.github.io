@@ -23,6 +23,8 @@ const ExperienceDisplay: React.FC<ExperienceEntry> = ({
       <div className="exp-content">
         <h2 className="exp-title">{title}</h2>
         <p className="exp-desc">{content}</p>
+        <p>{dates}</p>
+        <p>{location}</p>
       </div>
     </div>
   );
