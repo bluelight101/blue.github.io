@@ -1,0 +1,41 @@
+body {
+  font-family: 'Helvetica';
+}
+
+.nav-bar {
+  display: block;
+  position: fixed;
+  background-color: rgb(21, 145, 218);
+  padding: 10px;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+}
+
+.nav-bar-entry {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.profile-photo {
+  position: static;
+  width: 30rem;
+  height: 20rem;
+}
+
+.profile-header {
+  color: black;
+}
+
+.project-entry {
+  color: black;
+}
+
+.experience-entry {
+  color: black;
+}
+
+.skill-entry {
+  color: black;
+}

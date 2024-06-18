@@ -1,0 +1,28 @@
+.header-entry {
+  display: flex;
+  align-items: flex-start;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-picture {
+  width: 18rem;
+  height: 22rem;
+}
+
+.profile-text {
+  margin-left: 4rem;
+}
+
+.profile-name {
+}
+
+.profile-desc {
+}
+
+.profile-links {
+}
+
+.profile-icons {
+}
