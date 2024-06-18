@@ -8,16 +8,24 @@ interface ExperienceEntry {
   location: string;
 }
 
-function ExperienceDisplay({ entry }: { entry: ExperienceEntry }) {
+const ExperienceDisplay: React.FC<ExperienceEntry> = ({
+  imgsrc,
+  title,
+  content,
+  dates,
+  location,
+}) => {
   return (
     <div className="exp-entry">
       <div>
-        <img src={entry.imgsrc} alt={"exp-image"} className="exp-image" />
+        <img src={imgsrc} alt={"exp-image"} className="exp-image" />
       </div>
       <div className="exp-content">
-        <h2 className="exp-title">{entry.title}</h2>
-        <p className="exp-desc">{entry.content}</p>
+        <h2 className="exp-title">{title}</h2>
+        <p className="exp-desc">{content}</p>
       </div>
     </div>
   );
-}
+};
+
+export default ExperienceDisplay;

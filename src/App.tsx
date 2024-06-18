@@ -1,43 +1,35 @@
 import "./App.css";
+
+/* Component imports */
 import ProjectDisplay from "./components/Projects";
 import Header from "./components/Header";
-import projectsJSON from "./assets/text/projects.json";
-import image1 from "./assets/images/profile_picture.png";
-import linkedin from "./assets/images/LI-In-Bug.png"
+import Navigation from "./components/Navigation";
 
-function App() {
-  const project_title = "Project title here";
-  const project_content = "Project description here";
-  const project_repolink = "github.com";
-  const project_imagesrc = image1;
+/* JSON raw data imports */
+import projects from "../public/text/projects.json";
+import header from "../public/text/header.json";
 
-  const entry = {
-    imgsrc: project_imagesrc,
-    title: project_title,
-    repo_link: project_repolink,
-    content: project_content,
-  };
-  const entry2 = {
-    imgsrc: projectsJSON[0].imgsrc,
-    title: projectsJSON[0].title,
-    repo_link: projectsJSON[0].repo_link,
-    content: projectsJSON[0].content,
-  };
-
-  const headerEntry = {
-    photo: image1,
-    name: "Jimmy Lao",
-    desc: "Autobiography about myself...",
-  };
-
+const App: React.FC = () => {
   return (
     <>
-      <Header entry={headerEntry} />
-      <ProjectDisplay entry={entry} />
-      <ProjectDisplay entry={entry2} />
-      <ProjectDisplay entry={entry} />
+      <Navigation />
+      <Header photo={header.photo} name={header.name} desc={header.desc} />
+      <h1>Experience</h1>
+
+      <h1>Projects</h1>
+      <div className="projects-section">
+        {projects.map((project, index) => (
+          <ProjectDisplay
+            key={index}
+            imgsrc={project.imgsrc}
+            title={project.title}
+            repo_link={project.repo_link}
+            content={project.content}
+          />
+        ))}
+      </div>
     </>
   );
-}
+};
 
 export default App;

@@ -1,4 +1,5 @@
 import React from "react";
+import Socials from "./Socials";
 import "./Header.css";
 
 interface HeaderEntry {
@@ -7,41 +8,30 @@ interface HeaderEntry {
   desc: string;
 }
 
-interface SocialClick {
-  link: string;
-  icon: string;
-}
-
-function Header(props) {
+const Header: React.FC<HeaderEntry> = ({ photo, name, desc }) => {
   return (
     <div className="header-entry">
-      <div>
-        <img
-          className="profile-picture"
-          alt={"profile-pic"}
-          src={props.photo}
-        />
-      </div>
+      <img alt={"profile-pic"} src={photo} />
       <div className="profile-text">
-        <h1 className="profile-name">{props.name}</h1>
-        <p className="profile-desc">{props.desc}</p>
-
-        <div>
-          <ClickableSocial link={} icon={} />
+        <h1>{name}</h1>
+        <p>{desc}</p>
+        <div className="socials">
+          <Socials
+            link={"https://wwww.linkedin.com/in/jimmylao/"}
+            icon={photo}
+          ></Socials>
+          <Socials
+            link={"https://wwww.linkedin.com/in/jimmylao/"}
+            icon={photo}
+          ></Socials>
+          <Socials
+            link={"https://wwww.linkedin.com/in/jimmylao/"}
+            icon={photo}
+          ></Socials>
         </div>
       </div>
     </div>
   );
-}
-
-function ClickableSocial(props: SocialClick) {
-  return (
-    <>
-      <a href={props.link}>
-        <img src={props.icon} alt={"icon"} width="3rem" height="3rem" />
-      </a>
-    </>
-  );
-}
+};
 
 export default Header;

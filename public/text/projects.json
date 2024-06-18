@@ -1,0 +1,43 @@
+[
+  {
+    "imgsrc": "/images/profile_picture.png",
+    "title": "Modeling Non-Equilibrium Processes with Neural CDEs",
+    "repo_link": null,
+    "content": "Trained a Neural Controlled Differential Equations"
+  },
+
+  {
+    "imgsrc": "/images/profile_picture.png",
+    "title": "Representation Engineering",
+    "repo_link": null,
+    "content": "Implemented LoRRA with contrast vector loss for the Mistra-7B Instruct LLM in PyTorch. Incorporated reading vectors and task-specific contrast vectors to influence the model's representation of truthful vs. untruthful information from the TruthfulQA dataset"
+  },
+
+  {
+    "imgsrc": "/images/profile_picture.png",
+    "title": "Invariant GNN for Molecular Property Prediction",
+    "repo_link": null,
+    "content": "Project for physics-inspired deep learning class Implemented and trained a version of the SchNet E(3) invariant graph neural network in PyTorch and cross-validation with Scikit-learn for predicting molecular properties on the QM7 dataset"
+  },
+
+  {
+    "imgsrc": "/images/profile_picture.png",
+    "title": "N-dimensional Ising Model Simulation",
+    "repo_link": "https://github.com/bluelight101/ising_model",
+    "content": "Implementation of the Ising Model for magnetization using NumPy and SciPy Simulates the evolution of an N-dimensional lattice of spins under controlled thermal fluctuations and an external magnetic field"
+  },
+
+  {
+    "imgsrc": "/images/profile_picture.png",
+    "title": "Pintos OS",
+    "repo_link": null,
+    "content": "Group project for operating systems and systems programming class Implemented a Linux-inspired x86 kernel with support for multithreading and thread synchronization, virtual memory management, a FAT-based file system, and kernel/user programs Written in C and x86 assembly"
+  },
+
+  {
+    "imgsrc": "/images/profile_picture.png",
+    "title": "Gitlet",
+    "repo_link": null,
+    "content": "Project for data structures class, written entirely in Java. Lite version of Linus Torvald’s Git version-control system that allows for the creation of locally-stored repositories with support for repo branching, merging to solve conflicts, and updating files."
+  }
+]

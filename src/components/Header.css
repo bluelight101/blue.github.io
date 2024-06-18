@@ -6,7 +6,7 @@
   margin-right: auto;
 }
 
-.profile-picture {
+.header-entry > img {
   width: 18rem;
   height: 22rem;
 }
@@ -15,14 +15,16 @@
   margin-left: 4rem;
 }
 
-.profile-name {
+.profile-text > h1 {
+  font-size: 2.5rem;
 }
 
-.profile-desc {
+.profile-text > p {
+  width: 20rem;
+  height: 14rem;
+  word-wrap: break-word;
 }
 
-.profile-links {
-}
-
-.profile-icons {
+.socials {
+  align-items: center;
 }

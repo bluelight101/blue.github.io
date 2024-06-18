@@ -1,26 +1,28 @@
 .project-entry {
   display: flex;
   align-items: flex-start;
+  margin: 1rem;
+  max-width: calc(45%);
 }
 
-.project-image {
+.project-entry > img {
   width: 8rem;
   height: 8rem;
-  object-fit: cover;
   margin-right: 1rem;
 }
 
-.project-content {
+.project-text {
   display: flex;
   flex-direction: column;
 }
 
-.project-title {
+.project-text > h2 {
   font-weight: bold;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
 }
 
 .project-link {
+  font-size: small;
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
