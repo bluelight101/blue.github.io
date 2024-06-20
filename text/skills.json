@@ -1,0 +1,8 @@
+[
+  { "icon": "/images/python-logo.png", "name": "Python" },
+  { "icon": "/images/java-logo.png", "name": "Java" },
+  { "icon": "/images/js-logo.png", "name": "JavaScript" },
+  { "icon": "/images/ts-logo.png", "name": "TypeScript" },
+  { "icon": "/images/c-logo.png", "name": "C" },
+  { "icon": "/images/cpp-logo.png", "name": "C++" }
+]
